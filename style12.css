@@ -1,0 +1,88 @@
+body{
+	background-color:#E7E7E7 ;
+}
+.main-container{
+	width:445px;
+	height: 300px;
+	margin : 20px;
+	padding: 15px 0px 15px 20px;	
+	float: left;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	position: relative;
+}
+.text{
+	transition :1s;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+.follow-title{
+	position: absolute;
+	float:left;
+	width: 420px;
+	border: 0px solid black;
+	box-sizing: border-box;
+	border-width: 0px 0px 2px 0px;
+	background-color: #FFFFFF;
+	display: inline;
+	top: 47px;
+	left: 20px;
+}
+div {
+	text-align: center;
+}
+
+.div3{
+	transition: 0.5s;
+	width:130px;
+	height:130px;
+	background-color:#3B5998FF;
+	font-size: 100% ;
+	font-weight: bold;
+	color: white;
+	margin: 15px 15px 40px 0px;
+	float: left;
+	position: absolute;
+	top: 50px;
+}
+.icon{
+	font-size: 300%;
+	margin: 15px 15px 0px 15px;
+}
+.divcon
+{
+	text-align: center;
+	background-color:;
+	margin: 10px 15px 0px 15px;
+}
+.twitter{
+	background-color:#1DCAFFFF;
+	left: 165px;
+}
+.googleplus{
+	background-color:#DD4B39FF;
+	left: 310px;
+}
+.facebook {
+	background-color:#3B5998FF;
+	left: 20px;
+}
+.div3:hover{
+	background-color: black;
+	margin-top: 10px;
+	transition: 1s;
+}
+.facebook.div3:hover~.text {
+	transition :1s;
+	left: 20px;
+}
+.twitter.div3:hover~.text {
+	transition :1s;
+	left: 165px;
+}
+.googleplus.div3:hover~.text {
+	transition :1s;
+	left: 310px;
+}
