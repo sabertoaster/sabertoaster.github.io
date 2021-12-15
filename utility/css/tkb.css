@@ -1,5 +1,5 @@
 body{
-	background-image: url("waves.jpg");
+	background-image: url("/asset/waves.jpg");
 	background-size: 10%;
 	background-attachment: fixed;
 }
