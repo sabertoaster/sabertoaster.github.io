@@ -41,7 +41,7 @@ th,td{
 	overflow: hidden;
 	width: 2em;
 }
-.active{
+.active2{
 	background-color: #D6EEEE;
 }
 .active1{
@@ -116,15 +116,4 @@ td:hover.active1{
 td.active1{
 	word-wrap:break-word;
 	transition: .5s;
-}
-td:hover>.link{
-	color: red;
-	font-weight: bold;
-	font-size: 110%;
-	transition: .5s;
-}
-td>.link{
-	transition: .5s;
-	color: black;
-	text-decoration: none;
 }

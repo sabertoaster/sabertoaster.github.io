@@ -46,7 +46,9 @@ $("td").each(function (index) {
     for (let i = 0; i < array.length; i++) {
         for (let j in array[i]) {
             if ($(this).text() == j) {
-                $(this).on("click", () => window.open(array[i][j], '_blank'))
+                if ($(this).attr("class") === "active1") {
+                    $(this).on("click", () => window.open(array[i][j], '_blank'))
+                }
             }
         }
 
