@@ -2,7 +2,7 @@ const array = [{
         "Toán": "https://meet.google.com/gps-zzyp-wya"
     },
     {
-        "SHLop": "https://meet.google.com/gps-zzyp-wya"
+        "SHLớp": "https://meet.google.com/gps-zzyp-wya"
     },
     {
         "Chào cờ": "https://meet.google.com/gps-zzyp-wya"
