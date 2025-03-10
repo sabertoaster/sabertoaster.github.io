@@ -5,7 +5,7 @@ permalink: /projects/
 description: Still updating.
 nav: true
 nav_order: 3
-display_categories: []
+display_categories: [fun]
 horizontal: false
 ---
 

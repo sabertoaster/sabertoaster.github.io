@@ -5,7 +5,9 @@ date: 2024-07-31 12:00:00
 description: My journey diving deep into the world of LLMs - expect some casual thoughts, honest reactions, and maybe a few curse words
 tags: artificial-intelligence machine-learning llm course-notes
 categories: ai-ml
+giscus_comments: true
 thumbnail: assets/img/blog/2024/genai-llm-banner.png
+related_posts: true
 ---
 <div class="row justify-content-center mt-3">
     <div class="col-lg-8 col-md-10 mx-auto text-center">

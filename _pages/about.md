@@ -15,8 +15,7 @@ Currently pursuing a Bachelor's degree in Artificial Intelligence at VNU Univers
 My research interests lie at the intersection of:
 - Deep Learning & Computational Neuroscience
 - Brain-Computer Interfaces (BCIs)
-- Computer Vision & Medical Image Processing
-- Human-Computer Interaction
+- NeuroAI
 
 Through my work with the AIVN Research Group, I've gained hands-on experience in processing fMRI images and conducting literature reviews on medical imaging. This experience has reinforced my interest in developing intuitive, adaptive interfaces that respond to neural signals and physiological changes.
 
@@ -29,7 +28,7 @@ I've led several projects that demonstrate my technical capabilities:
 
 ## Community Involvement
 Active in the tech community as:
-- Web Specialist at HCMUS Google Developer Student Club
+- Head of AI/DS at HCMUS Google Developer Group on Campus (formerly Google Developer Student Club)
 - Community Member at AI VIET NAM
 - Research Member at AIVN Research Group
 
