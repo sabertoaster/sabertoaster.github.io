@@ -20,7 +20,7 @@
     {
       "institution": "VNUHCM University of Science",
       "location": "HCMC, Vietnam",
-      "url": "https://www.en.hcmus.edu.vn/",
+      "url": "https://www.hcmus.edu.vn/",
       "area": "Artificial Intelligence",
       "studyType": "Bachelor",
       "startDate": "2023-09",
@@ -103,11 +103,11 @@
   ],
   "interests": [
     {
-      "name": "Deep Learning",
+      "name": "Artificial Intelligence",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Diffusion Models",
-        "Image Processing"
+        "Machine Learning",
+        "Deep Learning"
       ]
     },
     {
@@ -115,7 +115,7 @@
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Brain-Computer Interface",
-        "Human-Computer Interaction"
+        "NeuroAI"
       ]
     }
   ],
