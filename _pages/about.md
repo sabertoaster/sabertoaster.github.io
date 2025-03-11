@@ -1,6 +1,11 @@
 ---
 layout: about
 title: About
+profile:
+    align: right
+    image: prof_pic.jpg  # Change to false or remove this line
+    image_circular: false
+    
 permalink: /
 subtitle: Artificial Intelligence Major @ <a href='https://fit.hcmus.edu.vn/'>FIT - HCMUS</a>.
 social: true
@@ -9,7 +14,7 @@ social: true
 I'm an undergraduate student passionate about bridging the gap between human cognition and machines, with a particular focus on Brain-Computer Interfaces (BCIs) and assistive technologies. My academic journey is driven by the belief that technology should enhance human capabilities while ensuring accessibility for all.
 
 ## Academic Background
-Currently pursuing a Bachelor's degree in Artificial Intelligence at VNU University of Science (GPA: 3.85/4.0), I complement my formal education with online courses from Harvard, Stanford, and Coursera. My coursework spans from theoretical foundations in calculus and linear algebra to practical applications in computer vision and machine learning.
+Currently pursuing a Bachelor's degree in Artificial Intelligence at VNU University of Science (GPA: 3.85/4.0), I complement my formal education with online courses from Harvard, Stanford, and Coursera. My coursework spans from theoretical foundations in calculus and linear algebra to practical applications in machine learning and deep learning.
 
 ## Research Interests
 My research interests lie at the intersection of:

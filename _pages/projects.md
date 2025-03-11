@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Projects
+title: Works
 permalink: /projects/
-description: Still updating.
+description: 
 nav: true
 nav_order: 3
-display_categories: [fun]
+display_categories: [semester project, self project, competition project]
 horizontal: false
 ---
 
