@@ -3,8 +3,9 @@ layout: page
 title: MazeGame
 description: (CSC10010) A Python-based maze game featuring multiple pathfinding algorithms with interactive visualization
 img: assets/img/projects/mazegame/maze_thumbnail.png
-importance: 1
+importance  : 1
 category: semester project
+giscus_comments: true
 related_publications: false
 ---
 <div class="row">
