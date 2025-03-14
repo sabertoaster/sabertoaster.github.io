@@ -21,6 +21,7 @@ Our solution addresses a common challenge in beverage marketing: accurately meas
 4. Categorize retail environments (bars, restaurants, stores)
 5. Generate comprehensive reports for marketing analysis
 
+[View GitHub repo](https://github.com/sabertoaster/AngelHack2024)
 
 ## Technical Implementation
 
