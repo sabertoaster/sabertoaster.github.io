@@ -3,7 +3,7 @@ layout: post
 title: STIC - Generative AI for LLMs - An Experience
 date: 2024-07-31 12:00:00
 description: My journey diving deep into the world of LLMs - expect some casual thoughts, honest reactions, and maybe a few curse words
-tags: artificial-intelligence machine-learning llm course-notes
+tags: course-notes
 categories: ai-ml
 giscus_comments: true
 thumbnail: assets/img/blog/2024/genai-llm-banner.png

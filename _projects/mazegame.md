@@ -149,7 +149,7 @@ Through this project, we gained valuable experience in:
 
 MazeGame successfully demonstrates the application of various pathfinding algorithms in an engaging, interactive format. The project balances educational value with entertainment, making it a useful tool for understanding graph algorithms in a visual context.
 
-The source code for this project is available on [GitHub](https://github.com/yourusername/MazeSolver).
+The source code for this project is available on [GitHub](https://github.com/sabertoaster/Maze_Solver).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
