@@ -390,7 +390,6 @@ langsep: " | "
 exclude_from_localization: ["assets/css", "assets/img"]
 parallel_localization: false
 
-url: https://sabertoaster.github.io
 sass:
   sourcemap: never
 # -----------------------------------------------------------------------------
