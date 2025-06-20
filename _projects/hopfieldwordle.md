@@ -18,7 +18,7 @@ While existing Wordle solvers achieve 95%+ success rates using information theor
 
 ---
 ## Background
-### 1. Wordle and Information Theory.
+### 1. Wordle and the Mathematical Approach.
 Skip to [Hopfield part](#2-brief-background-on-classical-hopfield-networks) if you already know what is a Wordle and Information Theory application for it.
 
 > "Wordle is a web-based word game created and developed by the Welsh software engineer [Josh Wardle](https://en.wikipedia.org/wiki/Josh_Wardle). <mark>In the game, players have six attempts to guess a five-letter word, receiving feedback through colored tiles that indicate correct letters and their placement.</mark> A single puzzle is released daily, with all players attempting to solve the same word. It was inspired by word games like [Jotto](https://en.wikipedia.org/wiki/Jotto) and the game show [Lingo](https://en.wikipedia.org/wiki/Lingo_(American_game_show)). Bought and hosted by [The NY Times](https://www.nytimes.com)."
@@ -34,6 +34,8 @@ A summary of Wordle mechanism. Few exceptions like double word rule can be found
 </div>
 <br>
 <br>
+
+---
 Information Theory - How it's used in solving Wordle: ([3blue1brown explanation](https://www.youtube.com/watch?v=v68zYyaEmEA))
 
 
@@ -46,7 +48,76 @@ $$E = -\sum_{i} p_i \log_2 p_i$$
 - Exhaustive similarity computations
 - No memory or attention limitations
 
-**The Cognitive Gap:** Humans don't optimize information theory—we use **bounded memory retrieval** and **associative reasoning**.
+---
+Rank One Approximation - from the paper [Rank One Approximation as a Strategy for Wordle](https://arxiv.org/abs/2204.06324)
+
+[**Motivation:**](## "Cited from the paper")
+> "The motivation behind a low rank approximation comes from determining the dominant direction of a matrix. In statistics this approach is referred to as "Principal Component Analysis" and is used to **determine a line of best fit** through a set of data. The principal direction can be helpful in data analysis and making predictive models. In the context of Wordle, the principal component of a set of words will be found and interpreted as the best representation of the set. By then finding the word closest to the principal component it can be interpreted that this word is 'most representative' of the set. This method will find a representative word without needing to consider letter frequency."
+
+[**Theory**](## "Cited from the paper")
+<br>
+A rank one approximation begins with applying single value decomposition to a matrix $$A$$. Single value decomposition is a way of factoring a matrix $$A$$ into the following form:
+
+$$A=USV^T$$
+
+For an $m×n$ matrix the factors $$U,S$$ and $$V$$ are defined as follows:
+
+$$U := m×m \text{ matrix whose } \textbf{columns} \text{ are the left singular vectors } u_i$$
+$$S := m×n \text{ matrix whose } \textbf{diagonal entries} \text{ are the singular values } \lambda_i$$
+$$V := n×n \text{ matrix whose } \textbf{rows} \text{ are the right singular vectors } v_i$$
+
+where:
+
+$$u_i := \text{the eigenvectors of } AA^T$$
+$$\lambda_i := \text{the eigenvalues of } AA^T \text{ (or } A^TA\text{)}$$
+$$v_i := \text{the eigenvectors of } A^TA$$
+
+The eigenvectors for both $$U,S$$ and $$V$$ are arranged in descending order according to their corresponding eigenvalue. If $m=n$ that is to say the following:
+
+$$A =\begin{bmatrix}
+    u_{11}       & \dots & u_{1m} \\
+    \vdots       &       & \vdots \\
+    u_{m1}       & \dots & u_{mm}
+\end{bmatrix}
+\begin{bmatrix}
+    \lambda_{1} & 0 & \dots & 0 \\
+         0      & \lambda_{2} & \dots & 0 \\
+    \vdots      & \vdots &    & \vdots \\
+    0      & 0 & \dots & \lambda_{m}
+\end{bmatrix}
+\begin{bmatrix}
+    v_{11}       & \dots & v_{1n} \\
+    \vdots       &       & \vdots \\
+    v_{n1}       & \dots & v_{nn}
+\end{bmatrix}$$
+
+Where:
+
+$$\lambda_1>\lambda_2...>\lambda_m$$
+
+and
+
+$$u_i = \begin{bmatrix}
+u_{1i} \\
+u_{2i} \\
+\vdots \\
+u_{mi}
+\end{bmatrix} \text{ and } v_i^T=\begin{bmatrix}
+v_{i1} & v_{i2} & ... & v_{in} 
+\end{bmatrix} \text{ correspond to } \lambda_i$$
+
+Factoring $$A$$ into the components $$U,S$$ and $$V$$ is known as *Single Value Decomposition* of the matrix and is a question of determining eigenvectors and eigenvalues of the two matrix products and placing the results in their corresponding index. From here, a rank one approximation of $$A$$ considers ***the singular value $\lambda_1$ and the corresponding vectors $u_1$ and $v_1$ to approximate the matrix $A$.*** The method proposes that these two column vectors and eigenvalue is the best approximation of the matrix $$A$$.
+
+$$A ≈u_1\lambda_1 v_1^T$$
+
+---
+
+**References:**
+
+- Sauer, Timothy. "Eigenvalues and Singular Values." Numerical Analysis, Pearson, Boston, MA, 2006, pp. 566–579.
+- James, David, et al. "Singular Vectors' Subtle Secrets." The College Mathematics Journal, vol. 42, no. 2, 2011, pp. 86–95., https://doi.org/10.4169/college.math.j.42.2.086.
+
+In this work, I applied LORA based on the fact that it can applied on a retrieved set of words (fitting for my initial idea).
 
 ### 2. Brief background on Classical Hopfield Networks
 
@@ -134,11 +205,11 @@ $$\boxed{\text{Partial word input} \rightarrow \text{Energy minimization} \right
 
 These limitations motivated the development of **Modern Hopfield Networks**, which solve these issues while preserving the elegant associative memory properties.
 
-Some side related topics which are very important:
+Some side related topics which are also very important:
 - **Free Energy Principle:** How biological systems minimize surprise through prediction. 
   > Imagine you're trying to catch a ball. You make predictions about its trajectory (perception) and then take actions to move towards it (action). The FEP suggests that you're constantly minimizing the "surprise" of catching the ball by updating your predictions and refining your movements. 
-- **Hebbian Learning:** "Neurons that fire together, wire together" - the biological basis for associative memory.
-  > And neurons that fire out of sync, lose their link.
+- **Hebbian Learning:** 
+  > "Neurons that fire together, wire together" - the biological basis for associative memory.
 
 ### 3. Modern Hopfield Networks: Exponential Capacity and Continuous States
 
@@ -229,22 +300,213 @@ $$\text{Attention}(\mathbf{Q}, \mathbf{K}, \mathbf{V}) = \mathbf{V} \cdot \text{
 
 This equivalence reveals that **attention mechanisms are performing associative memory retrieval** in the continuous state space.
 
+---
 
-## What did I do (met qua mai chay thi nghiem gio di ngu cai)?
-### Techniques:
-- Onehot encoding
-- Feedback loop
+## What I Learned from Trying (and Failing) to Solve Wordle with Hopfield Networks
 
-### Emergent Problems:
-- Sub-optimal energy minimal.
-- Temporary suppress mechanism for newly recalled words.
+*A brutally honest account of why biological inspiration doesn't always translate to working code*
+
+---
+
+### What I Thought Would Happen
+
+I was convinced that solving Wordle would be a breeze—just build a working MVP since I initially thought solving Wordle was a **recalling game** plus **optimally choosing the retrieved answer**. The logic seemed bulletproof:
+
+1. Humans see "d__ty" and recall words like "deity," "dusty," "dirty" 
+2. This looks exactly like **associative memory retrieval**
+3. Modern Hopfield networks are basically attention mechanisms that do associative memory
+4. Therefore: **Hopfield + some word selection strategy = Human-like Wordle solver**
+
+I figured I'd model the recall part using Hopfield networks, then use some optimization method (LoRA-based eigenvector alignment) to pick the best candidate. Easy, right?
+
+**Spoiler alert**: It wasn't.
+
+---
+
+### What I Actually Built
+
+Let me walk through what I created:
+
+#### The Core Architecture
+
+I implemented a `WordHopfieldNetwork` that:
+- **One-hot encodes** 5-letter words into 130-dimensional vectors (5 positions × 26 letters)
+- Uses **modern Hopfield dynamics** with softmax attention:
+  ```python
+  similarities = self.beta * (self.memories.T @ effective_query)
+  attention_weights = softmax(similarities)
+  retrieved = self.memories @ attention_weights
+  ```
+- Applies **winner-take-all** decoding to get valid words back
+
+#### The Memory Deletion Catastrophe
+
+Here's where things got creative (read: desperate). When the network kept suggesting the same words, I implemented a "suppression mechanism":
+
+```python
+def retrieve_possible_words(self, partial_word, unknown_char='_'):
+    res = []
+    while True:
+        completed_word = self.complete_word(partial_word, unknown_char)
+        # Find the memory pattern for this word
+        position = np.where(np.all(self.memories == self.encode_word(
+            completed_word).reshape(-1, 1), axis=0))
+        if position[0].size > 0:
+            res.append(completed_word)
+            # Delete the memory permanently
+            self.memories = np.delete(self.memories, position, axis=1)
+        else:
+            break
+    return res
+```
+
+Yes, I literally **deleted patterns from memory** after retrieving them. What could go wrong?
+
+#### The LoRA Band-Aid
+
+To pick the "best" word from retrieved candidates, I bolted on a **Low-Rank Approximation** method that:
+- Converts candidate words to letter frequency vectors
+- Finds the dominant eigenvector of the word-word similarity matrix  
+- Picks the word with the smallest angle to this eigenvector
+
+```python
+def LSI(self, possible_words, must_haves):
+    A = self.word_to_vector(possible_words[0])
+    for word in possible_words:
+        A = np.concatenate((A, self.word_to_vector(word)), 1)
+    
+    AA = np.matmul(A, np.matrix.transpose(A))
+    w, v = np.linalg.eigh(AA)
+    dom1 = np.abs(v[:, -1])  # Dominant eigenvector
+    
+    # Find word with smallest angle to dominant direction
+    angle_min = 90
+    for i in range(len(possible_words)):
+        angle1 = np.arccos(np.matmul(A[:, i], dom1)/(np.linalg.norm(A[:, i])))
+        # ... pick best_word based on angle
+```
+
+This whole pipeline was held together with digital duct tape and wishful thinking.
+
+---
+
+### Why It Failed Spectacularly
+
+#### 1. **Sub-optimal Energy Minima**
+
+The network would converge to **nonsensical letter combinations** like "DAAEZ" or "SUUUU" because:
+- One-hot encoding creates **sparse, high-dimensional vectors**
+- Similar words (like "DUSTY", "DIRTY", "DEITY") create **overlapping attraction basins**
+- The energy landscape was littered with **spurious attractors** that maximized pattern overlap without forming valid English words
+
+#### 2. **Pattern Completion ≠ Constraint Satisfaction**
+
+This was the fundamental conceptual error. Wordle isn't about recalling complete patterns—it's about **satisfying logical constraints**:
+
+- 🟩 Green: Letter X **must** be in position Y
+- 🟨 Yellow: Letter X **must** be in the word but **not** in position Y  
+- ⬜ Gray: Letter X **must not** be anywhere in the word
+
+My Hopfield network optimized for:
+$$\text{argmax}_{\text{word}} \; \text{similarity}(\text{word}, \text{partial\_pattern})$$
+
+But Wordle requires:
+$$\text{argmax}_{\text{word}} \; \mathbb{I}[\text{word satisfies all constraints}]$$
+
+These are **fundamentally different objective functions**.
+
+#### 3. **Suppression Mechanism Caused Chaos**
+
+Deleting memories from the Hopfield network was like **removing neurons from a brain mid-thought**:
+
+- **Catastrophic interference**: Removing one pattern corrupted the retrieval of similar patterns
+- **Cascade failures**: After suppressing ~10 words, the network couldn't retrieve anything sensible
+- **Memory degradation**: The attention weights became unstable as the memory matrix shrank
+
+The network went from confidently suggesting "DEITY" to outputting gibberish like "" within a few deletions.
+Also [a weird bug happened](## "Maybe it's a programming skill issues"), the network keeps on converging to deleted patterns although it's not presented in the memory matrix anymore.
+
+#### 4. **Wrong Tool for the Job**
+
+I was essentially using a **hammer to perform surgery**. Hopfield networks excel at:
+- **Denoising** corrupted patterns
+- **Completing** missing parts of stored memories  
+- **Associative recall** from partial cues
+
+But Wordle needs:
+- **Logical reasoning** about constraints
+- **Search** through valid word space
+- **Information-theoretic optimization** for guess selection
+
+---
+
+### What I Learned
+The biggest lesson? I was solving the wrong problem entirely. I thought Wordle was about pattern completion when it's actually about constraint satisfaction. Hopfield networks excel at recalling corrupted memories, but Wordle doesn't give you corrupted patterns—it gives you logical rules that must be satisfied.
+When humans see "d__ty" and think "deity," they're not just doing associative recall. They're simultaneously tracking constraints (no repeated letters from previous guesses, letter positions that are forbidden, etc.) while accessing word memory. I tried to cram this entire cognitive pipeline into a single associative memory mechanism, which was fundamentally naive.
+Seeing memory deletion cascade into complete network breakdown showed me why you can't just hack biological systems with engineering tricks.
+Most importantly: <mark>biological inspiration doesn't automatically translate to good algorithms. Just because the brain does something doesn't mean copying that mechanism will work in silicon.</mark> The gap between cognitive plausibility and computational efficiency is huge, and I underestimated it completely.
+
+---
+### If I Were to Do This Again...
+
+#### Constraint-Aware Energy Function
+
+Instead of pure pattern completion, I'd formulate this as **constraint satisfaction with memory bias**:
+
+$$E(x) = E_{\text{valid}}(x) + \lambda_G E_{\text{green}}(x, G) + \lambda_Y E_{\text{yellow}}(x, Y) + \lambda_B E_{\text{black}}(x, B) + E_{\text{memory}}(x)$$
+
+Where:
+- $$E_{\text{green}}(x, G) = \sum_{(i,c) \in G} (1 - x_{i,c})$$ penalizes violating green constraints
+- $$E_{\text{yellow}}(x, Y)$$ ensures yellow letters appear elsewhere 
+- $$E_{\text{black}}(x, B)$$ forbids gray letters entirely
+- $$E_{\text{memory}}(x) = -\log\sum_{\mu} \exp(\beta x^T \xi^{\mu})$$ biases toward real words
+
+This wouldn't be "pure" Hopfield anymore—it's more like **constrained optimization inspired by Hopfield**. But at least it might work.
+
+#### Inhibitory Fields Instead of Memory Deletion
+
+Rather than destroying memories, research more and implement some forms of memory suppressions:
+- [Do Not Let the Beginning Trap you! On Inhibition, Associative Creative Chains, and Hopfield Neural Networks](https://onlinelibrary.wiley.com/doi/10.1002/jocb.680)
   
+This approach might preserves network stability while avoiding repetition.
 
-## Conclusion 
+#### Dense Distributed Representations
 
+The **sparse one-hot encoding** was problematic because:
+- No **semantic relationships** between similar words
+- **High dimensionality** with **low information density**
+- Lots of **local minima** without meaningful structure
 
+Better approaches:
+- **Letter n-gram embeddings** (capture "TH", "CH", "ST" patterns)
+- **Phonetic representations** (similar-sounding words cluster together)
+- **Pre-trained word embeddings** (semantic similarity built-in)
+
+For example, "DUSTY" and "DIRTY" should be closer in embedding space than "DUSTY" and "ZEBRA".
+
+---
+
+## Conclusion:
+
+This project was a total failure in terms of building a working Wordle solver. The success rate was probably worse than random guessing.
+Sometimes the most valuable research is the kind that **doesn't work**—because it teaches you **why** it doesn't work, and **what to try instead**.
+
+Next up: Maybe I'll try to solve Wordle with constraint satisfaction properly, or better yet, find a problem that's actually suited for Hopfield networks.
+
+---
+*Code available on [GitHub](https://github.com/sabertoaster/HopfieldWordle)*
+
+---
 ### References
+1. The paper I chose to dive deep into hopfield: [Hopfield Networks is All You Need](https://ml-jku.github.io/hopfield-layers/)
+2. Video that sparked my interest in doing Hopfield Net: [Hopfield network: How are memories stored in neural networks? #SoME2](https://youtu.be/piF6D6CQxUw)
+3. Daily Wordle: [NY Times](https://www.nytimes.com/games/wordle/index.html)
 
+---
+Acknowledgement:
+- Thanks my dear teammates @ HCMUS for agreeing to do my initial idea on Hopfield Networks, hope we can colab again in the future.
+- Thanks Dr. Tam Nguyen @ EPFL who checked on our drafts and be my trusty information source.
+- Everyone that supported me emotionally during this.
 
 ### Disclaimer
 [^1]: This is proved to be inaccurate to depict how neurons works irl, example when you sit down/ stand up, there'll be 2 seperate pathways of neurons to strengthen. For further reading, please consider [a explanation video of Artem Kirsanov on "Brain's Hidden Learning Limits"](https://www.youtube.com/watch?v=Ay3_D7VgzZs). 
