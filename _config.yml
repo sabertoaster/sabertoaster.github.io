@@ -10,7 +10,7 @@ middle_name:
 last_name: Mai
 email: minhhuymaiduc@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  A dedicated life-long learner with a passion for deep learning, artificial intelligence, and neuroscience.
 footer_text: >
   al-folio theme
 keywords: deep-learning, artificial-intelligence, neuroscience # add your own keywords or leave empty
@@ -202,7 +202,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit:  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false

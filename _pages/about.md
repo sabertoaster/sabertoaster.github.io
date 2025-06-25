@@ -9,6 +9,7 @@ profile:
 permalink: /
 subtitle: Artificial Intelligence Major @ <a href='https://fit.hcmus.edu.vn/'>FIT - HCMUS</a>.
 social: true
+# news: true
 ---
 
 I'm an undergraduate student passionate about bridging the gap between human cognition and machines, with a particular focus on Brain-Computer Interfaces (BCIs) and assistive technologies. My academic journey is driven by the belief that technology should enhance human capabilities while ensuring accessibility for all.
@@ -17,22 +18,17 @@ I'm an undergraduate student passionate about bridging the gap between human cog
 Currently pursuing a Bachelor's degree in Artificial Intelligence at VNU University of Science (GPA: 3.85/4.0), I complement my formal education with online courses from Harvard, Stanford, and Coursera. My coursework spans from theoretical foundations in calculus and linear algebra to practical applications in machine learning and deep learning.
 
 ## Research Interests
-My research interests lie at the intersection of:
 - Deep Learning & Computational Neuroscience
 - Brain-Computer Interfaces (BCIs)
 - NeuroAI
 
-Through my work with the AIVN Research Group, I've gained hands-on experience in processing fMRI images and conducting literature reviews on medical imaging. This experience has reinforced my interest in developing intuitive, adaptive interfaces that respond to neural signals and physiological changes.
-
 ## Technical Projects
-I've led several projects that demonstrate my technical capabilities:
 - Implemented stereo matching algorithms for 3D depth reconstruction
 - Built image retrieval systems using CLIP embeddings and semantic search
 - Developed pathfinding visualizations using various algorithms (DFS, BFS, A*, Q-Learning)
 - Created optimized game engines with AI components
 
 ## Community Involvement
-Active in the tech community as:
 - Head of AI/DS at HCMUS Google Developer Group on Campus (formerly Google Developer Student Club)
 - Community Member at AI VIET NAM
 - Research Member at AIVN Research Group
