@@ -7,6 +7,7 @@ importance: 1
 category: self project
 tags: [associative-memory, comp-neursci]
 related_publications: false
+giscus_comments: true
 toc:
   sidebar: true
 ---

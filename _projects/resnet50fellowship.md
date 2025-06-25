@@ -6,6 +6,7 @@ img: assets/img/projects/resnet50fellowship/flowers_classification.png
 importance: 1
 category: self project
 tags: [computer-vision, deep-learning, contrastive-learning, fine-tuning, fellowship-ai]
+giscus_comments: true
 related_publications: false
 toc:
   sidebar: true
