@@ -15,6 +15,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           
+      - name: Create template sync ignore file
+        run: |
+          echo ".github/workflows/" > .templatesyncignore
+          echo ".github/dependabot.yml" >> .templatesyncignore
+          
       - name: Sync with al-folio template
         uses: AndreasAugustin/actions-template-sync@v2
         with:
@@ -47,8 +52,4 @@ jobs:
           pr_labels: |
             automated-update
             template-sync
-          # IMPORTANT: Exclude workflow files to avoid permission issues
-          ignore_files: |
-            .github/workflows/
-            .github/dependabot.yml
           pr_commit_msg: "chore: sync with al-folio template"
