@@ -9,11 +9,27 @@ related_posts: false
 <!-- to be written -->
 I was hooked with these shits:
 
+Pokemon: MMO, gen5, gen1, gen6, FireAsh
+<br>
+Godlike Burger (on steam)
+<br>
+League of Legends: @sabertoaster
+<br>
+Superfighters Deluxe
+<br>
+Stardew Valley
+<br>
+The Dark Book 
+<br>
+Punch Club
+<br>
 Punch Club 2: Fast Forward
 <br>
 Furi
 <br>
 Starbound
+<br>
+For the King
 <br>
 Streets of Rouge
 <br>
@@ -35,7 +51,9 @@ Divinity: Original Sins
 <br>
 [Divinity: Original Sins 2](https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/)
 <br>
-**Tags: Turn-based, Strategic, Roguelite, Roguelike, RPG, ...**
+[Horizon: Zero Dawn](https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/) (this is going to be my last game if I was to play again, the only one)
+
+**Tags: Turn-based, Strategic, Roguelite, Roguelike, RPG, ...** 👉 FPS hater 👈
 
 ---
 And also for Youtube:
@@ -46,11 +64,13 @@ And also for Youtube:
 
 ---
 And also Reddit, Instagram and Facebook Reels, you guys own me my fucking time, give it back here!
-
+<br>
 ~~I will talk about them in the future if possible!~~
 <br>
-I'm on my meds right now guys, thank you for stopping by and actually care about me. 
+I'm on my meds right now guys, thank you for stopping by and actually care about me. I must change my habits.
 
-<p style="text-align: center; color: red;"><b><i>THESE GUYS MUST BE REPLACED!!!</i></b></p>
+<p style="text-align: center; color: red;"><b><i>THESE ACTIVITIES MUST BE REPLACED!!!</i></b></p>
 
-I must change my mindset
+---
+Mini rehab tracking:
+- 28/07/2025: Still indulging in it.
