@@ -1,0 +1,37 @@
+
+# .github/workflows/sync-template.yml
+name: Sync from al-folio template
+on:
+  # Manual trigger
+  workflow_dispatch:
+  # Monthly auto-check (optional)
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Sync with template
+        uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_repo_path: alshedivat/al-folio
+          upstream_branch: main
+          pr_title: "[Automated] Sync with al-folio template"
+          pr_body: |
+            This PR contains updates from the latest al-folio template.
+            
+            **⚠️ Review carefully before merging!**
+            
+            - Check for breaking changes in the changelog
+            - Test locally before merging
+            - Update your config if needed
+          pr_labels: |
+            template-sync
+            automated
