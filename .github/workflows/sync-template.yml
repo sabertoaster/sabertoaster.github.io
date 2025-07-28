@@ -1,17 +1,23 @@
-<<<<<<< HEAD
 name: Sync from al-folio template
 on:
   # Manual trigger - you can run this anytime
   workflow_dispatch:
   # Automatic monthly check (1st day of each month at midnight UTC)
-=======
-# .github/workflows/sync-template.yml
-name: Sync from al-folio template
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }name: Sync from al-folio template
 on:
-  # Manual trigger
+  # Manual trigger - you can run this anytime
   workflow_dispatch:
-  # Monthly auto-check (optional)
->>>>>>> origin/main
+  # Automatic monthly check (1st day of each month at midnight UTC)
   schedule:
     - cron: "0 0 1 * *"
 
@@ -24,7 +30,44 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           
-<<<<<<< HEAD
+      - name: Sync with al-folio template
+        uses: AndreasAugustin/actions-template-sync@v2
+        with:
+          source_gh_token: ${{ secrets.GITHUB_TOKEN }}
+          source_repo_path: alshedivat/al-folio
+          upstream_branch: main
+          pr_title: "[Auto-Update] Sync with al-folio template"
+          pr_body: |
+            🤖 **Automated update from al-folio template**
+            
+            This PR contains the latest updates from the al-folio theme.
+            
+            ## 📋 Review Checklist
+            - [ ] Check the files changed below
+            - [ ] Look for any breaking changes
+            - [ ] Test locally if major changes (optional)
+            - [ ] Update your `_config.yml` if new options added
+            
+            ## 🎯 Actions
+            - **✅ Merge**: Apply these updates to your site
+            - **❌ Close**: Skip this update (robot won't bother you again about this version)
+            - **⏸️ Leave open**: Decide later
+            
+            ## 🛠️ Need help?
+            - Check the [al-folio changelog](https://github.com/alshedivat/al-folio/releases)
+            - Ask in [discussions](https://github.com/alshedivat/al-folio/discussions)
+            
+            ---
+            *Created automatically by GitHub Actions*
+          pr_labels: |
+            automated-update
+            template-sync
+          # IMPORTANT: Exclude workflow files to avoid permission issues
+          ignore_files: |
+            .github/workflows/
+            .github/dependabot.yml
+          pr_commit_msg: "chore: sync with al-folio template"}
+          
       - name: Sync with al-folio template
         uses: AndreasAugustin/actions-template-sync@v2
         with:
@@ -62,23 +105,3 @@ jobs:
             .github/workflows/
             .github/dependabot.yml
           pr_commit_msg: "chore: sync with al-folio template"
-=======
-      - name: Sync with template
-        uses: AndreasAugustin/actions-template-sync@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_repo_path: alshedivat/al-folio
-          upstream_branch: main
-          pr_title: "[Automated] Sync with al-folio template"
-          pr_body: |
-            This PR contains updates from the latest al-folio template.
-            
-            **⚠️ Review carefully before merging!**
-            
-            - Check for breaking changes in the changelog
-            - Test locally before merging
-            - Update your config if needed
-          pr_labels: |
-            template-sync
-            automated
->>>>>>> origin/main
