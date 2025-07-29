@@ -5,38 +5,43 @@ profile:
     align: right
     image: prof_pic.jpg  # Change to false or remove this line
     image_circular: false
+    # more_info: >
+    #   <p>555 your office number</p>
+    #   <p>123 your address street</p>
+    #   <p>Your City, State 12345</p>
     
 permalink: /
 subtitle: Artificial Intelligence Major @ <a href='https://fit.hcmus.edu.vn/'>FIT - HCMUS</a>.
 social: true
-# news: true
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 3 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an undergraduate student passionate about bridging the gap between human cognition and machines, with a particular focus on Brain-Computer Interfaces (BCIs) and assistive technologies. My academic journey is driven by the belief that technology should enhance human capabilities while ensuring accessibility for all.
+I'm an undergraduate student studying Artificial Intelligence with an interest in how technology can help people, particularly in areas like Brain-Computer Interfaces and accessibility tools. I'm still learning but excited about the potential for technology to make a positive difference.
 
 ## Academic Background
-Currently pursuing a Bachelor's degree in Artificial Intelligence at VNU University of Science (GPA: 3.85/4.0), I complement my formal education with online courses from Harvard, Stanford, and Coursera. My coursework spans from theoretical foundations in calculus and linear algebra to practical applications in machine learning and deep learning.
 
-## Research Interests
+I'm currently working toward my Bachelor's degree in Artificial Intelligence at VNU University of Science. Alongside my coursework, I've been taking online courses from places like Harvard, Stanford, and Coursera to deepen my understanding of topics ranging from math fundamentals to machine learning applications.
+
+## Areas of Interest
+
 - Deep Learning & Computational Neuroscience
 - Brain-Computer Interfaces (BCIs)
 - NeuroAI
 
-## Technical Projects
-- Implemented stereo matching algorithms for 3D depth reconstruction
-- Built image retrieval systems using CLIP embeddings and semantic search
-- Developed pathfinding visualizations using various algorithms (DFS, BFS, A*, Q-Learning)
-- Created optimized game engines with AI components
+## Getting Involved
 
-## Community Involvement
-- Head of AI/DS at HCMUS Google Developer Group on Campus (formerly Google Developer Student Club)
-- Community Member at AI VIET NAM
+- Head of AI/DS at HCMUS Google Developer Group on Campus
+- Member of AI VIET NAM community
 - Research Member at AIVN Research Group
 
-I'm fluent in English (IELTS 7.5), conversational in French, and proficient in multiple programming languages and frameworks. Currently seeking opportunities to contribute to cutting-edge research in neuroscience and artificial intelligence.
+I speak English well and am learning French. I'm always eager to learn more about AI and neuroscience, and I'd love to connect with others who share these interests.
 
-Feel free to reach out if you'd like to discuss potential collaborations or share insights about the fascinating intersection of AI and neuroscience!
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.  -->
+Feel free to reach out if you'd like to chat about AI, neuroscience, or anything in between!

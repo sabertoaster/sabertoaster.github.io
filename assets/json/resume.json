@@ -1,1 +1,133 @@
-{"basics":{"name":"Mai Duc Minh Huy","label":"","image":"","email":"minhhuymaiduc@gmail.com","phone":"","url":"","summary":"","location":{},"profiles":[{"network":"Facebook","username":"Mai Duc Minh Huy","url":"https://facebook.com/minhhuymaiduc"}]},"education":[{"institution":"VNUHCM University of Science","location":"HCMC, Vietnam","url":"https://www.hcmus.edu.vn/","area":"Artificial Intelligence","studyType":"Bachelor","startDate":"2023-09","endDate":"","score":"3.85/4.0","courses":[]},{"institution":"AI VIET NAM","location":"HCMC, Vietnam","url":"https://aivietnam.edu.vn/","area":"Artificial Intelligence","studyType":"Extracurricular","startDate":"2023-11","endDate":"","score":"","courses":["Introduction to Data Science","Machine Learning Algorithms"]}],"certificates":[{"name":"Mathematics for ML","date":"2024-02","issuer":"Imperial College London","url":"https://www.coursera.org/account/accomplishments/specialization/Q2C83SMKY6AV","icon":""},{"name":"Machine Learning","date":"2024-08","issuer":"DeepLearning.ai","url":"https://certificates.cs50.io/dfbd42bf-d9ea-4b3b-8d9e-49deffc2972d.pdf","icon":""},{"name":"CS50AI","date":"2024-02","issuer":"HarvardX","url":"https://certificates.cs50.io/dfbd42bf-d9ea-4b3b-8d9e-49deffc2972d.pdf","icon":""}],"skills":[{"name":"Programming","level":"","icon":"fa-solid fa-hashtag","keywords":["Object Oriented Programming","C/C++","C#","Python","Front-end"]},{"name":"Tools","level":"","icon":"fa-solid fa-hashtag","keywords":["JetBrains IDE","VS/VSCode","Unity"]},{"name":"Libraries","level":"","icon":"fa-solid fa-hashtag","keywords":["Pytorch","Scikit-learn","ML-Agents"]}],"interests":[{"name":"Artificial Intelligence","icon":"fa-solid fa-tag","keywords":["Machine Learning","Deep Learning"]},{"name":"Computational Neuroscience","icon":"fa-solid fa-tag","keywords":["Brain-Computer Interface","NeuroAI"]}],"languages":[{"language":"English","fluency":"Fluent","icon":""},{"language":"French","fluency":"Conversational","icon":""}]}
+{
+    "basics": {
+        "name": "Mai Duc Minh Huy",
+        "label": "",
+        "image": "",
+        "email": "minhhuymaiduc@gmail.com",
+        "phone": "",
+        "url": "",
+        "summary": "",
+        "location": {},
+        "profiles": [
+            {
+                "network": "Facebook",
+                "username": "Mai Duc Minh Huy",
+                "url": "https://facebook.com/minhhuymaiduc"
+            }
+        ]
+    },
+    "education": [
+        {
+            "institution": "VNUHCM University of Science",
+            "location": "HCMC, Vietnam",
+            "url": "https://www.hcmus.edu.vn/",
+            "area": "Artificial Intelligence",
+            "studyType": "Bachelor",
+            "startDate": "2023-09",
+            "endDate": "",
+            "score": "3.85/4.0",
+            "courses": []
+        },
+        {
+            "institution": "AI VIET NAM",
+            "location": "HCMC, Vietnam",
+            "url": "https://aivietnam.edu.vn/",
+            "area": "Artificial Intelligence",
+            "studyType": "Extracurricular",
+            "startDate": "2023-11",
+            "endDate": "",
+            "score": "",
+            "courses": [
+                "Introduction to Data Science",
+                "Machine Learning Algorithms"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Mathematics for ML",
+            "date": "2024-02",
+            "issuer": "Imperial College London",
+            "url": "https://www.coursera.org/account/accomplishments/specialization/Q2C83SMKY6AV",
+            "icon": ""
+        },
+        {
+            "name": "Machine Learning",
+            "date": "2024-08",
+            "issuer": "DeepLearning.ai",
+            "url": "https://certificates.cs50.io/dfbd42bf-d9ea-4b3b-8d9e-49deffc2972d.pdf",
+            "icon": ""
+        },
+        {
+            "name": "CS50AI",
+            "date": "2024-02",
+            "issuer": "HarvardX",
+            "url": "https://certificates.cs50.io/dfbd42bf-d9ea-4b3b-8d9e-49deffc2972d.pdf",
+            "icon": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming",
+            "level": "",
+            "icon": "fa-solid fa-hashtag",
+            "keywords": [
+                "Object Oriented Programming",
+                "C/C++",
+                "C#",
+                "Python",
+                "Front-end"
+            ]
+        },
+        {
+            "name": "Tools",
+            "level": "",
+            "icon": "fa-solid fa-hashtag",
+            "keywords": [
+                "JetBrains IDE",
+                "VS/VSCode",
+                "Unity"
+            ]
+        },
+        {
+            "name": "Libraries",
+            "level": "",
+            "icon": "fa-solid fa-hashtag",
+            "keywords": [
+                "Pytorch",
+                "Scikit-learn",
+                "ML-Agents"
+            ]
+        }
+    ],
+    "interests": [
+        {
+            "name": "Artificial Intelligence",
+            "icon": "fa-solid fa-tag",
+            "keywords": [
+                "Machine Learning",
+                "Deep Learning"
+            ]
+        },
+        {
+            "name": "Computational Neuroscience",
+            "icon": "fa-solid fa-tag",
+            "keywords": [
+                "Brain-Computer Interface",
+                "NeuroAI"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Fluent",
+            "icon": ""
+        },
+        {
+            "language": "French",
+            "fluency": "Conversational",
+            "icon": ""
+        }
+    ]
+}
