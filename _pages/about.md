@@ -1,25 +1,22 @@
 ---
 layout: about
-title: about
-permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+title: About
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+    align: right
+    image: prof_pic.jpg  # Change to false or remove this line
+    image_circular: false
+    # more_info: >
+    #   <p>555 your office number</p>
+    #   <p>123 your address street</p>
+    #   <p>Your City, State 12345</p>
+    
+permalink: /
+subtitle: Artificial Intelligence Major @ <a href='https://fit.hcmus.edu.vn/'>FIT - HCMUS</a>.
+social: true
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -27,8 +24,24 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm an undergraduate student studying Artificial Intelligence with an interest in how technology can help people, particularly in areas like Brain-Computer Interfaces and accessibility tools. I'm still learning but excited about the potential for technology to make a positive difference.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+## Academic Background
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm currently working toward my Bachelor's degree in Artificial Intelligence at VNU University of Science. Alongside my coursework, I've been taking online courses from places like Harvard, Stanford, and Coursera to deepen my understanding of topics ranging from math fundamentals to machine learning applications.
+
+## Areas of Interest
+
+- Deep Learning & Computational Neuroscience
+- Brain-Computer Interfaces (BCIs)
+- NeuroAI
+
+## Getting Involved
+
+- Head of AI/DS at HCMUS Google Developer Group on Campus
+- Member of AI VIET NAM community
+- Research Member at AIVN Research Group
+
+I speak English well and am learning French. I'm always eager to learn more about AI and neuroscience, and I'd love to connect with others who share these interests.
+
+Feel free to reach out if you'd like to chat about AI, neuroscience, or anything in between!

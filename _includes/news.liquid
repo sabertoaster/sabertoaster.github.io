@@ -14,17 +14,38 @@
         {% else %}
           {% assign news_limit = news_size %}
         {% endif %}
-        {% for item in news limit: news_limit %}
+        {% assign news_by_year = news | group_by_exp: "item", "item.date | date: '%Y'" %}
+        {% assign items_displayed = 0 %}
+        
+        {% for year_group in news_by_year %}
+          {% if items_displayed >= news_limit %}
+            {% break %}
+          {% endif %}
+          
+          <!-- Year header row -->
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
+            <th colspan="2" style="padding-top: 1.5rem; padding-bottom: 0.5rem; font-weight: bold; color: var(--global-theme-color);">
+              {{ year_group.name }}
+            </th>
           </tr>
+          
+          <!-- News items for this year -->
+          {% for item in year_group.items %}
+            {% if items_displayed >= news_limit %}
+              {% break %}
+            {% endif %}
+            <tr>
+              <th scope="row" style="width: 20%">{{ item.date | date: '%b %d' }}</th>
+              <td>
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </td>
+            </tr>
+            {% assign items_displayed = items_displayed | plus: 1 %}
+          {% endfor %}
         {% endfor %}
       </table>
     </div>
