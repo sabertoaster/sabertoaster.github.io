@@ -12,3 +12,18 @@
 .language-switcher a:hover {
     text-decoration: underline;
 }
+
+
+.post .post-content table {
+    td {
+        padding: 2px 2rem 2px 0;
+    }
+}
+
+.post .post-content table {
+    padding-bottom: 2px;
+}
+
+.post .post-content table tbody tr:nth-child(odd) {
+    background-color: var(--global-divider-color);
+}
