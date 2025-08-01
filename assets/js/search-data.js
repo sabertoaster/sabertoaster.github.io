@@ -59,17 +59,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/awesome-learning-path/";
           
         },
-      },{id: "post-downfall-don-39-t-fall-down",
-        
-          title: "Downfall don&#39;t fall down.",
-        
-        description: "My depressed experience.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/downfall/";
-          
-        },
       },{id: "news-i-got-into-hcmus-fire",
           title: 'I got into HCMUS :fire:',
           description: "",

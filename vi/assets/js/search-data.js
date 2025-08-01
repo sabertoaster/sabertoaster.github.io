@@ -59,17 +59,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/awesome-learning-path/";
           
         },
-      },{id: "post-trượt-dốc-đừng-xuống-hố",
-        
-          title: "Trượt dốc đừng xuống hố.",
-        
-        description: "Hành trình xây dựng thế giới của tôi",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/downfall/";
-          
-        },
       },{id: "news-i-got-into-hcmus-fire",
           title: 'I got into HCMUS :fire:',
           description: "",
