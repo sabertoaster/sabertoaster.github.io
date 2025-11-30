@@ -37,7 +37,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-harvard-cs197-ai-research-experiences",
+        },{id: "post-mathematics-for-computational-neuroscience",
+        
+          title: "Mathematics for Computational Neuroscience",
+        
+        description: "Notes and commentaries",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/math-for-neuro/";
+          
+        },
+      },{id: "post-how-to-start-computational-neuroscience",
+        
+          title: "How to start Computational Neuroscience",
+        
+        description: "Notes and commentaries",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/incf-open-neuroscience/";
+          
+        },
+      },{id: "post-harvard-cs197-ai-research-experiences",
         
           title: "Harvard CS197 AI Research Experiences",
         
