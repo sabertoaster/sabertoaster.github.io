@@ -11,15 +11,13 @@ lang: en
 toc: 
     sidebar: left
 featured: false
-sitemap: false
-published: false
 ---
 
 Disclaimer: I didn't own any of the contents and it all belongs to the rightful owner credited/ mentioned/ referenced at the end of the post.
 
 > Purpose of the study track is to provide a convenient and guided starting point to acquire the knowledge and skills required for open neuroscience.
 
-
+---
 ## Brief introduction
 {% details  Research in the neurosciences is becoming ever more demanding of a variety of sophisticated technical skills and computational competence, especially when one factors in the objective of making this science reproducible, open, and FAIR. %}
 > In collaboration with the INCF, the Canadian Open Neuroscience Platform (CONP) is assembling a curated set of international content that aims to provide guidance through the increasingly complex landscape of skills and tools required for open neuroscience research.  Such initiatives are key to facilitating the acquisition of the skills and knowledge comprising open-science workflows (from ‘open-by-design’ experimental conception, through reproducible analysis, to safe data sharing).  This is a living collection, with many materials to be added and updated still.
@@ -33,6 +31,7 @@ The track is divided into 3 seperate parts:
 - [Techniques on Statistics and Machine Learning](https://training.incf.org/collection/statistics-machine-learning): <br> These courses will introduce the basics of powerful machine learning techniques and the elements of traditional statistical approaches provide foundational knowledge for multivariate analyses.
 - [Standard & Best Practices](https://training.incf.org/collection/standards-best-practices): <br> This collection of courses and lessons intends to provide resources for standards and best practices in Open Science, Publishing, Ethics, and more.
 
+---
 ## [Data Science - Tools of the Trade](https://training.incf.org/collection/data-science-tools-trade)
 
 {% details Table of contents %}
@@ -66,6 +65,7 @@ The track is divided into 3 seperate parts:
 
 ### Conceptual background & refreshers
 
+---
 ## [Statistics and Machine Learning](https://training.incf.org/collection/statistics-machine-learning)
 
 {% details Table of contents %}
@@ -84,16 +84,23 @@ The track is divided into 3 seperate parts:
     - scikit-learn
     - nilearn
     - JASP
+
 {% enddetails %}
 
+---
 ## [Standard & Best Practices](https://training.incf.org/collection/standards-best-practices)
 
 {% details Table of contents %}
 1. [Open Science: Practices and Policies](https://training.incf.org/course/open-science-practices-and-policies)
+    - The Open Science Training Handbook
+    - Standards for Project Management and Organization
+    - Support Your Research With Data Management Planning!
 2. [Ethics and Governance](https://training.incf.org/course/ethics-and-governance)
-3. [Publishing](https://training.incf.org/course/publishing)
+3. [Publishing](https://training.incf.org/course/publishing) (Still under development)
 {% enddetails %}
 
+A few more things: 
+- From [Neuromatch Academy 2025](https://docs.neuromatch.io/p/CpPZ_P0Tl9vv6s/2025-Academy-Professional-Development): How to Build Data Pipelines for Neuroscience & AI: https://youtu.be/PpDZgFyUlMQ
 
 ---
 ## References
