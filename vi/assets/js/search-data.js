@@ -93,7 +93,12 @@ ninja.data = [{
           section: "News",},{id: "news-met-dr-tam-nguyen-epfl",
           title: 'Met Dr. Tam Nguyen @ EPFL',
           description: "",
-          section: "News",},{id: "news-failed-summer-epfl-internship-entrance",
+          section: "News",},{id: "news-deadass-edited",
+          title: 'Deadass (edited)',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025/01/first_day_2025/";
+            },},{id: "news-failed-summer-epfl-internship-entrance",
           title: 'Failed Summer@EPFL internship entrance.',
           description: "",
           section: "News",},{id: "news-failed-vinai-residency-batch-13",
@@ -132,7 +137,17 @@ ninja.data = [{
             },},{id: "news-attended-3-week-course-on-comp-neuro-nma",
           title: 'Attended 3-week course on Comp Neuro @ NMA',
           description: "",
-          section: "News",},{id: "projects-known-item-search-for-video-retrieval",
+          section: "News",},{id: "news-got-introduced-to-a-bunch-of-schoolwork-ranting-ahead-️",
+          title: 'Got introduced to a bunch of Schoolwork. Ranting ahead ⚠️',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025/10/schoolwork_3rd_year_1st_sem/";
+            },},{id: "news-my-new-year-resolution",
+          title: 'My new year resolution!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026/01/first_day_2026/";
+            },},{id: "projects-known-item-search-for-video-retrieval",
           title: 'Known Item Search for Video Retrieval',
           description: "A text-to-video retrieval system developed for HCMC AI Challenge 2024",
           section: "Projects",handler: () => {
