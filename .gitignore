@@ -11,5 +11,4 @@ assets/libs/
 node_modules/
 vendor
 .idea
-writing-plan.md
-*.gitignore
+.venv
