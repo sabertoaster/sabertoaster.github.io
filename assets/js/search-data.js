@@ -142,6 +142,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025/10/schoolwork_3rd_year_1st_sem/";
+            },},{id: "news-the-last-day-of-2025-reflection-and-memories-ahead",
+          title: 'The last day of 2025. Reflection and memories ahead.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025/12/last_day_2025/";
             },},{id: "news-my-new-year-resolution",
           title: 'My new year resolution!',
           description: "",
