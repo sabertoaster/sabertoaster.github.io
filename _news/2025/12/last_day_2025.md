@@ -67,7 +67,7 @@ Current unfinished schoolwork:
     \+ Slides.pdf<br>
     \+ Bai Tap Lop Nha <br>
     \+ Report.pdf
-    - Method <br>
+    - ~~Method~~ <br>
     - Exp<br>
     - Conclusion
 2. SAM LQN <br>
@@ -77,8 +77,8 @@ Current unfinished schoolwork:
     - Method <br>
     - Exp<br>
     - Conclusion
-3. Lab (2 mục) XLA LQN
-    - Vague AF
+3. ~~Lab (2 mục) XLA LQN~~
+    - ~~Vague AF~~
 4. A viva for final lab (OS)
     - Never touching this again
 5. Final Prep (làm đề) <br>
@@ -118,9 +118,9 @@ Current unfinished schoolwork:
         - 50 multiple choice - 90 mins.
     * Operating System
         - Topic:
-            - Tong quan He Dieu Hanh: 4 
+            - ~~Tong quan He Dieu Hanh: 4 ~~
             - He thong nhap xuat: 4
-            - He thong tap tin & FAT32: 15 (LT+BT)
+            - ~~He thong tap tin & FAT32: 15 (LT+BT)~~
             - Dieu phoi tien trinh & Dong bo hoa: 15 (LT+BT)
             - Quan ly bo nho & Bo nho ao: 15 (LT+BT)
         - 50 multiple choice questions - 90 mins.

@@ -4,7 +4,7 @@ title: Learning Resources
 date: 2025-07-01 12:00:00
 description: AI, Math and Neuroscience
 tags: 
-categories: artificial-intelligence comp-neursci math
+categories: artificial-intelligence computational-neuroscience mathematics
 lang: en
 featured: true
 related_posts: false
