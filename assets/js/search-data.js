@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-mathematics-for-computational-neuroscience",
+        },{id: "post-neuromatch-neuroai-course",
+        
+          title: "Neuromatch NeuroAI course",
+        
+        description: "In a nutshell",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/neuromatch-neuroai-course/";
+          
+        },
+      },{id: "post-mathematics-for-computational-neuroscience",
         
           title: "Mathematics for Computational Neuroscience",
         
@@ -112,6 +123,9 @@ ninja.data = [{
             },},{id: "news-failed-fpt-aic-residency-batch-6",
           title: 'Failed FPT AIC Residency Batch 6',
           description: "",
+          section: "News",},{id: "news-i-participated-in-algonauts2025",
+          title: 'I participated in Algonauts2025',
+          description: "",
           section: "News",},{id: "news-met-dr-thibaut-modrzyk",
           title: 'Met Dr. Thibaut Modrzyk',
           description: "",
@@ -152,7 +166,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026/01/first_day_2026/";
-            },},{id: "projects-known-item-search-for-video-retrieval",
+            },},{id: "news-i-finished-all-schoolwork-up-until-now",
+          title: 'I finished all schoolwork up until now!!',
+          description: "",
+          section: "News",},{id: "projects-known-item-search-for-video-retrieval",
           title: 'Known Item Search for Video Retrieval',
           description: "A text-to-video retrieval system developed for HCMC AI Challenge 2024",
           section: "Projects",handler: () => {
