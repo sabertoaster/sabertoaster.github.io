@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-neuromatch-neuroai-course",
+        },{id: "post-in-memorial-of-david-c-marr",
+        
+          title: "In memorial of David C.Marr",
+        
+        description: "Briefly written",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/in_memorial_david-marr/";
+          
+        },
+      },{id: "post-neuromatch-neuroai-course",
         
           title: "Neuromatch NeuroAI course",
         
