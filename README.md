@@ -26,6 +26,25 @@
 
 </div>
 
+## Recent template sync update summary
+
+This template sync update includes:
+
+- **Scale:** a large template-sync snapshot (around 180+ files changed in this update)
+- **Theme/UI updates:** broad updates in `_sass/**`, `_includes/**`, `_layouts/**`, and JS/CSS assets
+- **Sample content imports:** many template sample entries in `_posts/**`, `_projects/**`, `_news/**`, and `_teachings/**`
+- **Config/data changes:** updates in `_config.yml`, `_data/cv.yml`, `_data/socials.yml`, plus a large `_data/citations.yml`
+- **Docs/tooling/deps updates:** new docs and instruction files, plus dependency/runtime changes in `Gemfile*`, `package.json`, `requirements.txt`, and container/dev files
+
+High-priority files to review for personalization conflicts:
+
+- `_config.yml`
+- `_pages/about.md`
+- `_data/*`
+- `_posts/*`
+- `_projects/*`
+- `assets/img/prof_pic.jpg`
+
 ## User community
 
 The vibrant community of **al-folio** users is growing!
