@@ -3,8 +3,8 @@ layout: post
 title: What is Fast Fourier Transform
 date: 2025-07-31 12:00:00
 description: In a nutshell
-tags: 
-categories: math
+tags: mathematics
+categories: tutorials
 giscus_comments: true
 related_posts: true
 lang: en

@@ -3,8 +3,8 @@ layout: post
 title: Mathematics for Computational Neuroscience
 date: 2025-08-01 12:00:00
 description: Notes and commentaries
-tags: 
-categories: comp-neursci math
+tags: computational-neuroscience mathematics
+categories:
 giscus_comments: true
 related_posts: true
 lang: en
@@ -14,6 +14,7 @@ featured: false
 mermaid:
   enabled: true
   zoomable: true
+published: false
 ---
 
 Hosted by Speaker: [Alex Williams](https://training.incf.org/taxonomy/term/160)

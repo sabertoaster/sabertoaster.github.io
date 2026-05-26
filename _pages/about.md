@@ -24,11 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an undergraduate student studying Artificial Intelligence with an interest in how technology can help people, particularly in areas like Brain-Computer Interfaces and accessibility tools. I'm still learning but excited about the potential for technology to make a positive difference.
-
-## Academic Background
-
-I'm currently working toward my Bachelor's degree in Artificial Intelligence at VNU University of Science. Alongside my coursework, I've been taking online courses from places like Harvard, Stanford, and Coursera to deepen my understanding of topics ranging from math fundamentals to machine learning applications.
+Doing brain research.
 
 ## Areas of Interest
 
@@ -38,9 +34,7 @@ I'm currently working toward my Bachelor's degree in Artificial Intelligence at 
 
 ## Getting Involved
 
-- Head of AI/DS at HCMUS Google Developer Group on Campus
-- Member of AI VIET NAM community
-- Research Member at AIVN Research Group
+
 
 I speak English well and am learning French. I'm always eager to learn more about AI and neuroscience, and I'd love to connect with others who share these interests.
 

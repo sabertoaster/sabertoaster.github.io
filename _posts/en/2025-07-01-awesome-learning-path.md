@@ -3,11 +3,12 @@ layout: post
 title: Learning Resources
 date: 2025-07-01 12:00:00
 description: AI, Math and Neuroscience
-tags: 
-categories: artificial-intelligence computational-neuroscience mathematics
+tags: artificial-intelligence computational-neuroscience mathematics 
+categories:
 lang: en
 featured: true
 related_posts: false
+published: false
 ---
 
 

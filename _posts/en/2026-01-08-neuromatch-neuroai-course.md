@@ -3,14 +3,14 @@ layout: post
 title: Neuromatch NeuroAI course
 date: 2026-01-08 12:00:00
 description: In a nutshell
-tags: 
-categories: computational-neuroscience
+tags: computational-neuroscience 
+categories:
 giscus_comments: true
 related_posts: true
 lang: en
 featured: false
 sitemap: false
-published: true
+published: false
 ---
 
 <div class="row mt-3">

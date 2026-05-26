@@ -3,8 +3,8 @@ layout: post
 title: In memorial of David C.Marr
 date: 2026-01-19 12:00:00
 description: Briefly written
-tags: 
-categories: comp-neursci math
+tags: computational-neuroscience artificial-intelligence
+categories:
 giscus_comments: true
 related_posts: true
 lang: en

@@ -3,14 +3,18 @@ layout: post
 title: How to start Computational Neuroscience
 date: 2025-08-01 12:00:00
 description: Notes and commentaries
-tags: 
-categories: comp-neursci
+tags: computational-neuroscience
+categories:
 giscus_comments: true
 related_posts: true
 lang: en
 toc: 
     sidebar: left
 featured: false
+---
+
+Updated on 27 May 2026, so yeah this is kinda late and I think most of this stuff is only good for starters only, I wish you the very best if you were to find this, good luck on your journey. Think now I would post something more oriented and documented towards some of my current works.
+
 ---
 
 Disclaimer: I didn't own any of the contents and it all belongs to the rightful owner credited/ mentioned/ referenced at the end of the post.
