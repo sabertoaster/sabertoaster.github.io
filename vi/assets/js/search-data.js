@@ -48,28 +48,6 @@ ninja.data = [{
             window.location.href = "/blog/2026/in_memorial_david-marr/";
           
         },
-      },{id: "post-neuromatch-neuroai-course",
-        
-          title: "Neuromatch NeuroAI course",
-        
-        description: "In a nutshell",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/neuromatch-neuroai-course/";
-          
-        },
-      },{id: "post-mathematics-for-computational-neuroscience",
-        
-          title: "Mathematics for Computational Neuroscience",
-        
-        description: "Notes and commentaries",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/math-for-neuro/";
-          
-        },
       },{id: "post-how-to-start-computational-neuroscience",
         
           title: "How to start Computational Neuroscience",
@@ -79,28 +57,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/incf-open-neuroscience/";
-          
-        },
-      },{id: "post-harvard-cs197-ai-research-experiences",
-        
-          title: "Harvard CS197 AI Research Experiences",
-        
-        description: "Notes and commentaries",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/harvard-cs197/";
-          
-        },
-      },{id: "post-learning-resources",
-        
-          title: "Learning Resources",
-        
-        description: "AI, Math and Neuroscience",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/awesome-learning-path/";
           
         },
       },{id: "news-i-got-into-hcmus-fire",
