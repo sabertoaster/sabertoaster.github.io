@@ -136,7 +136,17 @@ ninja.data = [{
             },},{id: "news-i-finished-all-schoolwork-up-until-now",
           title: 'I finished all schoolwork up until now!!',
           description: "",
-          section: "News",},{id: "projects-known-item-search-for-video-retrieval",
+          section: "News",},{id: "news-labor-day",
+          title: 'Labor day',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026/06/labor_day/";
+            },},{id: "news-shower-thought",
+          title: 'Shower thought',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026/06/shower_thought/";
+            },},{id: "projects-known-item-search-for-video-retrieval",
           title: 'Known Item Search for Video Retrieval',
           description: "A text-to-video retrieval system developed for HCMC AI Challenge 2024",
           section: "Projects",handler: () => {
