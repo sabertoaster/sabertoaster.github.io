@@ -146,6 +146,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026/06/shower_thought/";
+            },},{id: "news-past-present-and-promise",
+          title: 'Past, Present and Promise',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026/07/23/";
             },},{id: "projects-known-item-search-for-video-retrieval",
           title: 'Known Item Search for Video Retrieval',
           description: "A text-to-video retrieval system developed for HCMC AI Challenge 2024",
